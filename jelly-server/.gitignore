@@ -1,0 +1,7 @@
+/src/database/db.sqlite
+/src/static
+/env/
+!env/requirements.txt
+/build
+/dist/
+/src.egg-info/

@@ -1,0 +1,12 @@
+[
+    {
+      "name": "Group1 - AwesomeGroup",
+      "id": 1,
+      "description": "A really cool group"
+    },
+    {
+      "name": "Group2 - Normal Group",
+      "id": 2,
+      "description": "A very average group"
+    }
+  ]

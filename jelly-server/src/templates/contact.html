@@ -1,0 +1,52 @@
+<!doctype html>
+<head>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<html>
+   <body>
+      <h2 style = "text-align: center;" >Student Preference List Form</h2>
+      <h2
+         style="
+         border-style: solid;
+         border-width: 3px;
+         border-color: black;
+         border-radius: 5px;
+         padding: 10px;
+         margin: 15px;"
+         >
+      <form action = "{{ id }}" method = post>
+         <fieldset>
+            <legend><u> Preference List </u></legend>
+            {{ form.hidden_tag() }}
+
+               <h5> Please order your preferences of students and groups top to bottom: </h5>
+
+            <h4>{{ form.students.label }}</h4>
+               <ol><h5>{% for students in form.students %}
+                  <li><div>{{ students }}</div></li>
+                  {% for message in students.errors %}
+                     <div>{{ message }}</div>
+                     {% endfor %}
+                  {% endfor %}</h5></ol>
+
+            <h4><br>{{ form.groups.label }}<br></h4>
+               <ol><h5>{% for groups in form.groups %}
+                  <li><div>{{ groups }}</div></li>
+                  {% for message in groups.errors %}
+                     <div>{{ message }}</div>
+                  {% endfor %}
+                  {% endfor %}</h5></ol>
+
+            <hr><h4> Group Descriptions: </h4></hr>
+               <h5>{% for descriptions in form.descriptions %}
+                  <li>{{ descriptions }}</li>
+               {% endfor %}</h5>
+
+
+            <h4><br>{{ form.submit }}</br></h4>
+            </div>
+         </fieldset>
+      </form>
+      </h2>
+   </body>
+</html>

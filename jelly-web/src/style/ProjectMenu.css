@@ -1,0 +1,16 @@
+.container {
+  width: 100%;
+  height: 100%;
+}
+.project-menu-title {
+  display: inline-block;
+  font-size: 2em;
+  font-weight: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.4px;
+  margin-bottom: 2.5%;
+}
+.project-menu-container {
+  text-align: center;
+}

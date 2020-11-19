@@ -1,0 +1,10 @@
+.git
+.idea
+.vscode
+.gitignore
+README.md
+jelly-web/node_modules
+build
+jelly-db
+jelly-server/env
+!jelly-server/env/requirements.txt

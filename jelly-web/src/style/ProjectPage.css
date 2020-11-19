@@ -1,0 +1,13 @@
+.project-home-title {
+  display: inline-block;
+  font-size: 2em;
+  font-weight: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.4px;
+  margin-bottom: 2.5%;
+}
+.project-home-container {
+  background-color: grey;
+  text-align: center;
+}
